@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Services</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar border-bottom border-body d-flex align-items-center" id="horizontal-nav">
@@ -14,11 +17,12 @@
             <!-- Hamburger Icon -->
             <span onclick="openNav()" class="hamburger-icon">&#9776;</span>
             <a class="navbar-brand ms-5" href="#">
-                <img src="https://res.cloudinary.com/luxuryp/images/w_1920,c_limit,f_auto,q_auto/tprhoiglqzbp9mbu8x8s/jhsereno-light" alt="Bootstrap" width="auto" height="24">
+                <img src="https://res.cloudinary.com/luxuryp/images/w_1920,c_limit,f_auto,q_auto/tprhoiglqzbp9mbu8x8s/jhsereno-light"
+                    alt="Bootstrap" width="auto" height="24" >
             </a>
             <form class="d-flex ms-auto" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search by Address or Area" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <input class="form-control me-2" type="search" placeholder="Search by Address or Area"
+                    aria-label="Search">
             </form>
         </div>
     </nav>
@@ -36,8 +40,519 @@
         <a href="#" id="sidebar-link">Testimonials</a>
         <a href="#" id="sidebar-link">Contact Us</a>
     </div>
+    
+    <!-- Header Image and Text -->
+    <div class="header-container">
+        <img src="https://media.mobidev.biz/2020/02/smart-home-app-development-case-study-scaled.jpeg?strip=all&lossy=1&w=1920&ssl=1"
+            id="header-image" alt="Header Image">
+        <div class="centered-text">Services</div>
+        <button class="btn mt-3" id="header-button" data-bs-toggle="modal" data-bs-target="#contactModal">Book an Appointment</button>
+    </div>
+    
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Main Section: Comprehensive Marketing Plan -->
+    <section class="comprehensive-section">
+        <div class="mt-5">
+            <h1 class="text-center" id="comprehensive-text">Comprehensive Marketing Plan</h1>
+            <div class="mt-5 row">
+                <!-- Image Section -->
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <img class="img-fluid" src="images/comprehensive-image.png" id="comprehensive-image" alt="Comprehensive Image">
+                </div>
+
+                <!-- Cards Section -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="row">
+                        <!-- First Row: Responsive & Syndication Cards -->
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                            <div class="card text-center" id="marketing-plan">
+                                <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/rmtn3r5zpsljdsncbwa4/image-007"
+                                    class="card-img-top" id="responsive-img" alt="Responsive">
+                                <div class="card-body">
+                                    <h5 class="card-title">Responsive</h5>
+                                    <p class="card-text">I am always available via phone, text, or email.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                            <div class="card text-center" id="marketing-plan">
+                                <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ks8ztlvw2b35q5qgs6xn/image-011"
+                                    class="card-img-top" id="syndication-img" alt="Syndication">
+                                <div class="card-body">
+                                    <h5 class="card-title">Syndication</h5>
+                                    <p class="card-text">I market your property locally, nationally, and internationally.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Second Row: Virtual Tour & Photography Cards -->
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                            <div class="card text-center" id="marketing-plan">
+                                <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/zr3bugldblvebixagfs1/image-009"
+                                    class="card-img-top" id="virtual-img" alt="Virtual Tour">
+                                <div class="card-body">
+                                    <h5 class="card-title">Virtual Tour</h5>
+                                    <p class="card-text">Let's make your home stand out with a high quality virtual tour.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                            <div class="card text-center" id="marketing-plan">
+                                <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ks8ztlvw2b35q5qgs6xn/image-011"
+                                    class="card-img-top" id="photography-img" alt="Photography">
+                                <div class="card-body">
+                                    <h5 class="card-title">Photography</h5>
+                                    <p class="card-text">Beautiful, high-end photography is a central part of our marketing plan for your
+                                        property.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- End of Row -->
+                </div> <!-- End of col-lg-6 (cards) -->
+            </div> <!-- End of main row -->
+    
+            
+        </div>
+    </section>
+
+        <!-- Add shape divider -->
+        <div class="shape-divider">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <defs>
+                    <linearGradient id="gradient-divider" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="5%" style="stop-color:#523D35; stop-opacity:1" />
+                        <stop offset="50%" style="stop-color:#959D90; stop-opacity:0.6" />
+                        <stop offset="80%" style="stop-color:#E8D9CD; stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <path fill="url(#gradient-divider)" d="M0,60 C200,100 400,20 600,60 C800,100 1000,20 1200,60 L1440,60 L1440,120 L0,120 Z"></path>
+            </svg>
+        </div>
+
+        <section class="comprehensive-section">
+            <div class="mt-5">
+                    
+                <div class="mt-5 row"> 
+                    <!-- Cards Section (Images) -->
+                    <div class="col-lg-8 col-md-12" id="images-section">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12 mb-4"> <!-- Added col-12 for mobile -->
+                                <img class="img-fluid" src="https://res.cloudinary.com/luxuryp/images/w_1280,c_limit,f_auto,q_auto/ghtq7jtce7tsgdjtosrs/image-025" >
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 mb-4"> <!-- Added col-12 for mobile -->
+                                <img class="img-fluid" src="https://res.cloudinary.com/luxuryp/images/w_1280,c_limit,f_auto,q_auto/axx0whb7xfmlwhvcckrr/image-023">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 mb-4"> <!-- Added col-12 for mobile -->
+                                <img class="img-fluid" src="https://res.cloudinary.com/luxuryp/images/w_1280,c_limit,f_auto,q_auto/tvntwvzwsjyi3ndwtpux/image-022" >
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 mb-4"> <!-- Added col-12 for mobile -->
+                                <img class="img-fluid" src="https://res.cloudinary.com/luxuryp/images/w_1280,c_limit,f_auto,q_auto/lpaq7euqjebackcuwsdu/image-024">
+                            </div>
+                        </div> <!-- End of Row -->
+                    </div> <!-- End of col-lg-8 (images section) -->
+                    
+                        <!-- Text Section -->
+                    <div class="col-lg-4 col-md-12 mb-4" id="text-section">
+                        <h1 class="text-center mt-3" id="decor-title">Decor Guidance</h1>
+                        <h1 class="text-center mt-3" id="intentional-title">Intentional Layout</h1>
+                        <h2 class="text-center mt-5">My Staging Expertise</h2>
+                        <ul class="expertise">
+                            <li>Unclutter and organize your home</li>
+                            <li>Neatly arrange drawers and cabinets</li>
+                            <li>Keep pets outdoors or off the premises</li>
+                            <li>Play soft music</li>
+                            <li>Unclutter and organize your home</li>
+                            <li>Neatly arrange drawers and cabinets</li>
+                            <li>Keep pets outdoors or off the premises</li>
+                            <li>Play soft music</li>
+                        </ul>
+                    </div>
+                </div> <!-- End of main row -->            
+            </div>
+        </section>
+
+        <div class="selling-container mb-5">
+            <div class="selling-details">
+                <h1 class="mb-5">The Selling Process</h1>
+                
+                <div class="row mb-4">
+                    <!-- First Row with 3 Columns -->
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                        <h3>1</h3>
+                        <h5>Initial Consultation & Planning</h5>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                        <h3>2</h3>
+                        <h5>Devise & Execute Marketing Plan</h5>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                        <h3>3</h3>
+                        <h5>Review Offers & Reach Agreement with Buyer</h5>
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <!-- Second Row with 3 Columns -->
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                        <h3>4</h3>
+                        <h5>Complete Transaction Process</h5>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                        <h3>5</h3>
+                        <h5>After - Sale Service</h5>
+                    </div>
+                </div>
+            </div>
+            <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/gihsg13plfsb8xfbzmlf/image-027" id="selling-img" alt="Foreground image">
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 mb-4" id="about-us1">
+                        <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/azjfmtzx6evxpubynfci/edit-page-11r2" alt="Avatar" class="about-img" style="width:70%; border: solid #BBA58F;">
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6  mb-4">
+                    <div class=" mt-5">
+                         <h3 class="h2-about">Over 33 Years of Real Estate Success</h3>
+                         <p class="p-about" style="font-size: 18px; margin-top: 2em;">We provide every one of our clients with a level of service they won’t find anywhere else. We give them what they need, often before they know they need it. ​​​​​​​In real estate, almost everything can be negotiated. When you choose Hansen Partners It is experience is 100% nonnegotiable. ​​​​​​​ ​​​​​​​And it’s an experience like no other.</p>
+                    </div>
+                 </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 mb-4">
+                   <div class=" mt-3">
+                        <h3 class="h2-about">We Want To Create An Unforgettable Experience For You...</h3>
+                        <p class="p-about" style="font-size: 18px; margin-top: 2em;">We combine data gained from your home’s Comparative Market Analysis with local market research to create a marketing plan designed to help you meet your selling goals. Your home’s carefully designed plan will include a range of online, print, and other marketing tools targeted to the best-qualified pool of buyers. ​​​​​​​ Successfully marketing a home in today’s real estate environment requires a firm with experience and flexibility. Hansen Partners provides both.</p>
+                   </div>
+                </div>
+                
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 mb-4"  id="about-us2">
+                        <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/m5ea1kpipv5tiflnfx8t/edited-p-12" alt="Avatar" class="about-img" style="width:75%; border: solid #BBA58F;">
+                </div>
+            </div>
+        </div>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides">
+                <h3 class="mb-5">The Hansen Partners Communications Tablet</h3>
+              <p>We have created this as a wonderful tool so that we can communicate with you daily, provide you with updates on what is happening with your home. We are available at the with a click of your tablet.</p>
+            </div>
+        
+            <div class="mySlides">
+              <p>Benefits:</p>
+              <ul>
+                <li class="benefits">Review all documents and sign in the comfort of your home or anywhere.</li>
+                <li class="benefits">Stay up to date on all marketing activities, review materials, photos, etc. in real time</li>
+                <li class="benefits">Meet with us face to face on our Gotomeeting.com platform to go over and discuss the events of the week.</li>
+                <li class="benefits">You have your own email assigned just for you and your common space to quickly write a note, or quickly send a video message to us for fast communication using our Bomb bomb video messaging system.</li>
+            </ul>
+            </div>
+        
+            <div class="mySlides">
+              <p>We believe that transparency and guiding you and your family through the process is key to having the best experience.  During these uncertain times. It is a good feeling to know you have some one with a proven track record you can count on.  We will be here to handle your needs during the Real Estate process.  We think of it before a need even arises. Because, that is just what we do.  Who you work with does matter! .</p>
+            </div>
+        
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        
+            </div>
+                <div class="dot-container">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+            <div>
+
+                <div class="container">
+                    <h1 class="text-center mt-5" id="comprehensive-text">We Market Your Home to The World</h1>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                            <div class="card text-center mt-3" id="marketing-plan">
+                                <div class="card-body">
+                                    <h5 class="card-title mt-4">Our Online Marketing Strategy</h5>
+                                    <p class="card-text mt-3">​​​​​​​The Bay Area remains one of the world's most sought-after regions to live in, and when looking to sell, it is vital that your home be marketed online to audiences locally, nationally, and internationally.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                            <div class="card text-center mt-3" id="marketing-plan">
+                                <div class="card-body">
+                                    <h5 class="card-title mt-4">Local Exposure</h5>
+                                    <p class="card-text mt-3">​​​​​​Through our partnership with Nextdoor, the private online social network now used in over 80% of U.S. neighborhoods and virtually all Bay Area neighborhoods, we make sure your home receives targeted local exposure. When you list your home with Hansen Partners it will automatically appear on Nextdoor in your neighborhood.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                            <div class="card text-center mt-3" id="marketing-plan">
+                                <div class="card-body">
+                                    <h5 class="card-title mt-4">National Exposure</h5>
+                                    <p class="card-text mt-3">​​​​​We secure strategic positioning and enhancement on Realtor.com, Trulia, and Zillow, driving more consumers to your home and increasing exposure. We  will receive every inquiry about your property directly.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                            <div class="card text-center mt-3" id="marketing-plan">
+                                <div class="card-body">
+                                    <h5 class="card-title mt-4">International Exposure</h5>
+                                    <p class="card-text mt-3">To expose your luxury listing to millions of potential homebuyers worldwide, we promote on prominent international real estate portals, including: Wall Street Journal, LuxuryPortfolio.com, LuxuryRealEstate.com, LeadingRE.com, UniqueHomes.com, 
+                                        China.apr.com, Caimeiju, Juwai, Country Life UK</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <img class="logo-img mt-5" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/olcvsnzpdrd5tov8dbci/image-057">
+                    <div class="row mt-5">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 mb-4" id="about-us1">
+                                <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/og3ockhby4gghmrdfseo/edited-p-19" alt="Avatar" class="about-img" style="width:70%; border: solid #BBA58F;">
+                        </div>
+        
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6  mb-4">
+                            <div class=" mt-5">
+                                <img src="images/hansen-img-1.png" alt="Avatar" class="about-img" style="width:70%;">
+                                 <p class="p-about" style="font-size: 18px; margin-top: 2em;">Leading Real Estate Companies of The World® & Luxury Portfolio International</p>
+                                 <p class="p-about" style="font-size: 18px; margin-top: 2em;">JRockcliff is a founding member of Luxury Portfolio International®, the luxury division of Leading Real Estate Companies of the World®. With more than 500 member firms around the world, Our luxury listings are exposed to a vast global audience and reach potential buyers and investors in over 50 countries.</p>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6  mb-4">
+                            <div class=" mt-5">
+                                 <p class="p-about" style="font-size: 18px; margin-top: 2em;">Through our international affiliations, we have a strong presence in over 50 countries. Our luxury listings are sent to prominent international real estate sites, reaching over 70 million potential buyers and investors worldwide through our relationships with:</p>
+                                 <img src="images/hansen-img-1.png" alt="Avatar" class="about-img" style="width:70%;">
+                                 <p class="p-about" style="font-size: 18px; margin-top: 2em;">We also have several well-positioned affiliate offices in China, providing our clients with access to buyers in Hong Kong, Shanghai, and Beijing. </p>
+                            </div>
+                         </div>
+                        
+                         <div class="col-12 col-sm-12 col-md-12 col-lg-6 mb-4" id="luxury2">
+                            <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ebvif7iqcx0lcjlvwyuz/edited-page-20" alt="Avatar" class="about-img" style="width:70%; border: solid #BBA58F;">
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="container">
+                    <div class="mt-5">
+                        <div class="mt-5 row">
+                            <!-- Image Section -->
+                            <div class="col-lg-4 col-md-12 mb-4">
+                                <img class="img-fluid" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/vxnwvueubpgtfzn1k3cs/edited-p25" id="mobile-image" alt="Comprehensive Image">
+                            </div>
+            
+                            <!-- Cards Section -->
+                            <div class="col-lg-8 col-md-12">
+                                <div class="row">
+                                    <!-- First Row: Responsive & Syndication Cards -->
+                                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                                        <div class="card text-center" id="marketing-plan">
+                                            <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/s9q6shhmzz8ebbspxzfa/image-087"
+                                                class="card-img-top" id="responsive-img" alt="Responsive">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Responsive</h5>
+                                                <p class="card-text">I am always available via phone, text, or email.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                                        <div class="card text-center" id="marketing-plan">
+                                            <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ks8ztlvw2b35q5qgs6xn/image-011"
+                                                class="card-img-top" id="syndication-img" alt="Syndication">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Syndication</h5>
+                                                <p class="card-text">I market your property locally, nationally, and internationally.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <!-- Second Row: Virtual Tour & Photography Cards -->
+                                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                                        <div class="card text-center" id="marketing-plan">
+                                            <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/zr3bugldblvebixagfs1/image-009"
+                                                class="card-img-top" id="virtual-img" alt="Virtual Tour">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Virtual Tour</h5>
+                                                <p class="card-text">Let's make your home stand out with a high quality virtual tour.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                                        <div class="card text-center" id="marketing-plan">
+                                            <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/qljffx423kswkhh1oyc3/image-081"
+                                                class="card-img-top" id="photography-img" alt="Photography">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Drone Photography</h5>
+                                                <p class="card-text">Beautiful, high-end photography is a central part of our marketing plan for your
+                                                    property.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- End of Row -->
+                            </div> <!-- End of col-lg-6 (cards) -->
+                        </div> <!-- End of main row -->
+                        
+                    </div>
+                </div>
+
+                <div class="selling-container mt-5">
+                    <div class="selling-details">
+                        <h1 class="mb-5">Work With Us</h1>
+                        
+                        <div class="row mb-4">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                <h4>With decades of experience in luxurious Tri Valley real estate, our team is here to ensure that your dreams are a reality. Let us guide you through your home buying journey, contact us today!</h4>
+                            </div>
+                        </div>
+                
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                <button type="button" class="btn btn-success" id="contact-button" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/skkve0aqzhkkyiytn92d/work-with-us" id="selling-img" alt="Foreground image">
+                </div>
+                
+        <!-- Footer -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6  mb-4">
+                            <div class="mt-5">
+                                 <h3 >Julie Hansen Partnership</h3>
+                                 <h5>An elite group of the East Bay’s most talented and visionary real estate professionals believed buyers and sellers deserved more from their real estate company. More service. More resources. More integrity. More global reach. In a word, more of everything people should expect when they buy or sell their homes.</h5>
+                                 <img class="mt-5" src="images/hansen-img-2.png"  alt="Foreground image">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6  mb-4">
+                            <div class="mt-5" id="newsletter">
+                                <h3 >Newsletter</h3>
+                                <h5 >Subscribe to our Newsletter for latest news and updates. Stay tuned! </h5>
+                                <div class="mb-3 row"> 
+                                        <input type="text" class="form-control" id="inputEmail" placeholder="Enter your email" style="font-size: 20px; width: 100%;"> 
+                                </div>
+                                <div class="mb-3 row align-items-center">
+                                    <div class="col-sm-1">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    </div>
+                                    <div class="col-sm-11">
+                                        <label class="form-check-label" for="flexCheckDefault" style="font-size: 15px;">
+                                            By providing Julie Hansen Partnership your contact information, you acknowledge and agree to our Privacy Policy and consent to receiving marketing communications, including through automated calls, texts, and emails, some of which may use artificial or prerecorded voices. This consent isn’t necessary for purchasing any products or services and you may opt out at any time. To opt out from texts, you can reply, ‘stop’ at any time. To opt out from emails, you can click on the unsubscribe link in the emails. Message and data rates may apply.
+                                        </label>
+                                        <button type="button" class="btn btn-secondary mt-2" id="btn-send">Subscribe</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                       
+                </div>
+
+                <footer class="bg-dark text-light py-4">
+                    <div class="container">
+                        <div class="row">
+                            <!-- Column 1 -->
+                            <div class="col-md-6">
+                                <p><i class="fas fa-map-marker-alt"></i> 4733 Chabot Drive #100 Pleasanton, CA 94588</p>
+                                <p><i class="fas fa-phone"></i> (925) 553-6707</p>
+                                <p><i class="fas fa-envelope"></i> luxuryhomesinwc@icloud.com</p>
+                            </div>
+                            <!-- Column 2 -->
+                            <div class="col-md-6">
+                                <p>​​​​​​​Julie Hansen-Orvis | CA DRE# 00934447</p>
+                                <div class="social-links mb-3">
+                                    <a href="https://www.facebook.com/juliehansenpartership" target="_blank" class="social-icon">
+                                        <img src="images/facebook.png" alt="Facebook" class="img-fluid">
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/julie-hansen-orvis-10b99359/" target="_blank" class="social-icon">
+                                        <img src="images/linkedin.png" alt="LinkedIn" class="img-fluid">
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <!-- Column 1 -->
+                            <div class="col-md-6">
+                                <p>​​​​​​Website Designed & Developed by <a href="https://www.luxurypresence.com/" style="color: #E8D9CD;">Luxury Presence
+                                </a></p>
+                                
+                            </div>
+                            <!-- Column 2 -->
+                            <div class="col-md-6">
+                                <p>Copyright 2024 | Privacy Policy</p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+        <!-- Modal -->
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 50%;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contactModalLabel">Submit A Message</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p></p>
+                        <div class="mb-3 row">
+                            <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputName">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="inputPhone" class="col-sm-2 col-form-label">Phone</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputPhone">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputEmail">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">Message</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                            </div>
+                        </div>
+                        <div class="mb-3 row align-items-center">
+                            <div class="col-sm-1">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            </div>
+                            <div class="col-sm-11">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    By providing Julie Hansen Partnership your contact information, you acknowledge and agree to our Privacy Policy and consent to receiving marketing communications, including through automated calls, texts, and emails, some of which may use artificial or prerecorded voices. This consent isn’t necessary for purchasing any products or services and you may opt out at any time. To opt out from texts, you can reply, ‘stop’ at any time. To opt out from emails, you can click on the unsubscribe link in the emails. Message and data rates may apply.
+                                </label>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <button type="button" class="btn btn-secondary mb-2" id="btn-send">Send</button>
+            </div>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/ceead1354e.js" crossorigin="anonymous"></script>
     <script src="functions.js"></script>
 </body>
 </html>

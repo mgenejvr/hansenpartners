@@ -1,4 +1,13 @@
-#horizontal-nav{
+/* Reset default margins and paddings for the whole page */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+#horizontal-nav {
     background-color: #223030;
 }
 
@@ -43,3 +52,525 @@
     font-size: 36px;
     margin-left: 50px;
 }
+
+/* Ensure no gaps around the image */
+#header-image {
+    display: block; /* Removes inline spacing caused by img elements */
+    width: 100%; /* Ensures it spans the full width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.header-container {
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+#header-button {
+    position: absolute;
+    top: 60%; /* Adjust based on desired position */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Keeps the button on top */
+    background-color: #523d35bc;
+    color: #EFEFE9;
+    font-size: 20px;
+}
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #E6E6E6;
+    font-size: 5em;
+    text-shadow: 2px 2px 4px #223030;
+}
+
+@media (max-width: 768px) {
+    .centered-text {
+        font-size: 3em;
+    }
+
+    #header-image {
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .centered-text {
+        font-size: 2.5em;
+    }
+}
+
+section{
+    padding: 2em;
+}
+
+#comprehensive-text, #decor-title, #intentional-title {
+    background: linear-gradient(to right, #223030 , #523D35, #959D90, #BBA58F); /* Define the gradient */
+    -webkit-background-clip: text; /* Clip the background to the text (WebKit-specific) */
+    -webkit-text-fill-color: transparent; /* Make the text color transparent to show the gradient */
+    background-clip: text; /* Standard property for other browsers */
+    color: transparent; /* Set text color to transparent */
+}
+
+#comprehensive-image {
+    width: 100%; /* Make it responsive */
+    box-shadow: 1px 1px 1px 3px #E8D9CD;
+}
+
+#responsive-img, #syndication-img, #virtual-img, #photography-img {
+    margin: 0 auto;
+    width: 8em;
+    margin-bottom: -35px;
+}
+
+/* Flexbox for equal card heights */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of rows for responsiveness */
+}
+
+/* Card with Gradient Shadow using Pseudo-Element */
+#marketing-plan {
+    position: relative; /* Ensure the pseudo-element is positioned correctly */
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-color: white; /* Set card background to white to highlight shadow */
+}
+
+/* Simulate the gradient shadow using ::before pseudo-element */
+#marketing-plan::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Place it behind the card */
+    border-radius: 0.25rem; /* Match the card's border-radius if any */
+    background: linear-gradient(145deg, #223030, #523D35, #959D90, #BBA58F, #E8D9CD, #EFEFE9);
+    filter: blur(8px); /* Apply blur to simulate shadow */
+    opacity: 0.8; /* Slightly transparent to resemble a shadow */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+/* Add hover effect for a more prominent gradient shadow */
+#marketing-plan:hover::before {
+    filter: blur(15px); /* Increase blur on hover */
+    opacity: 1;
+}
+
+.card-img-top {
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.card-body {
+    flex-grow: 1; /* Allow the card body to grow to fill available space */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #comprehensive-image {
+        width: 100%;
+    }
+
+    .card-img-top {
+        width: 6em;
+    }
+}
+
+.card-title{
+    color: #523D35;
+    font-weight: bold;
+}
+
+.card-text{
+    color: #523D35
+}
+
+/* Make Images Section Larger */
+#images-section {
+    flex: 0 0 66.6667%; /* 8/12 of the grid */
+}
+
+/* Make Text Section Shorter */
+#text-section {
+    flex: 0 0 33.3333%; /* 4/12 of the grid */
+}
+
+/* Additional styling for the images */
+#images-section img {
+    width: 100%; /* Ensures images take full width of their container */
+    height: auto; /* Keeps the aspect ratio */
+    object-fit: cover; /* Ensures images fit nicely in the containers */
+    transition: transform 0.3s; /* Smooth transition for hover effects */
+    box-shadow: 
+        2px 2px 0px rgba(34, 48, 48, 0.4), /* #223030 */
+        4px 4px 0px rgba(82, 61, 53, 0.4), /* #523D35 */
+        6px 6px 0px rgba(149, 157, 144, 0.4), /* #959D90 */
+        8px 8px 0px rgba(187, 165, 143, 0.4), /* #BBA58F */
+        10px 10px 0px rgba(232, 217, 205, 0.4), /* #E8D9CD */
+        12px 12px 0px rgba(239, 239, 233, 0.4); /* #EFEFE9 */
+}
+
+/* Hover effect for images */
+#images-section img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+/* Adjustments for text section */
+#text-section {
+    padding: 1em; /* Adds some padding for mobile view */
+}
+
+/* Adjusting list styles for smaller screens */
+ul.expertise {
+    list-style-type: square;
+    margin-left: 14%;
+    font-size: 20px; /* Adjust font size for better readability on smaller screens */
+    padding: 0; /* Reset padding */
+}
+
+h2, ul.expertise {
+    color: #523D35;
+}
+
+@media (max-width: 768px) { /* Media query for smaller devices */
+    ul.expertise {
+        margin-left: 10%; /* Add some margin on smaller devices */
+        font-size: 15px; /* Reduce font size further if needed */
+    }
+
+    h1, h2 {
+        font-size: 1.5rem; /* Adjust heading sizes for mobile */
+    }
+}
+
+.shape-divider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -3em; /* To make it overlap with the section above */
+    margin-bottom: -3em;
+    opacity: 1; /* Set the opacity of the divider */
+    z-index: 1; /* Ensure it appears above the other content */
+}
+
+.shape-divider svg {
+    display: block;
+    width: 100%;
+    height: auto; /* Adjust height if needed */
+}
+
+/* Ensure no gaps around the image */
+#selling-img {
+    display: block; /* Removes inline spacing caused by img elements */
+    width: 100%; /* Ensures it spans the full width */
+    height: 40em; /* Maintain aspect ratio */
+}
+
+.selling-container {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;  /* Ensure content doesn't overflow */
+}
+
+/* Dark overlay for background image without affecting the text */
+.selling-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Darker filter (adjust the opacity as needed) */
+    z-index: 1;  /* Ensure it is above the background but below the text */
+}
+
+.selling-details {
+    text-align: center;
+    position: absolute;
+    top: 20%; /* Adjust as needed to position */
+    left: 0; /* Adjust as needed to position */
+    right: 0; /* Ensure it spans the full width */
+    bottom: 0; /* Ensure it spans the full height if needed */
+    color: white; /* Adjust text color for visibility */
+    padding: 20px; /* Add padding for better readability */
+    z-index: 1; /* Ensure it stays above the image */
+}
+
+#about-us1{
+    transition: transform 0.3s; /* Smooth transition for hover effects */
+    box-shadow: 
+        4px 4px 0px rgba(82, 61, 53, 0.4), /* #523D35 */
+        6px 6px 0px rgba(149, 157, 144, 0.4), /* #959D90 */
+        8px 8px 0px rgba(187, 165, 143, 0.4), /* #BBA58F */
+        10px 10px 0px rgba(232, 217, 205, 0.4), /* #E8D9CD */
+        12px 12px 0px rgba(239, 239, 233, 0.4); /* #EFEFE9 */
+    padding: 2em;
+    border: solid #EFEFE9;
+    border-radius: 0px 50px 0px 0px; /* top, right, bottom, left */
+    background-color: #EFEFE9;
+}
+
+/* Hover effect for cards */
+#about-us1:hover,  #about-us2:hover{
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+#about-us2{
+    transition: transform 0.3s; /* Smooth transition for hover effects */
+    box-shadow: 
+        -4px 4px 0px rgba(82, 61, 53, 0.4),   /* Shadow shifted to the left and bottom */
+        -6px 6px 0px rgba(149, 157, 144, 0.4), /* Adjust offsets for left and bottom */
+        -8px 8px 0px rgba(187, 165, 143, 0.4),
+        -10px 10px 0px rgba(232, 217, 205, 0.4),
+        -12px 12px 0px rgba(239, 239, 233, 0.4); /* Left and bottom shadow */
+    border: solid #EFEFE9;
+    border-radius: 50px 0px 0px 0px; /* top, right, bottom, left */
+    background-color: #EFEFE9;
+    padding: 2em;
+    height: 60vh;
+}
+
+.about-img, .h2-about, .p-about{
+    display: block;
+    margin: 0 auto; 
+}
+
+.h2-about{
+    background: linear-gradient(to right, #223030 , #523D35, #959D90, #BBA58F); /* Define the gradient */
+    -webkit-background-clip: text; /* Clip the background to the text (WebKit-specific) */
+    -webkit-text-fill-color: transparent; /* Make the text color transparent to show the gradient */
+    background-clip: text; /* Standard property for other browsers */
+    color: transparent; /* Set text color to transparent */
+}
+
+.p-about{
+    color: #523D35;
+    
+}
+
+.h2-about, .p-about{
+    display: block;
+    margin: 0 auto; 
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+/* Responsive adjustments */
+@media (max-width:768px) {
+    #about-us1 {
+        height: auto;
+    }
+
+    #about-us2 {   
+        height: auto;
+    }
+
+
+    .card-img-top {
+        width: 6em;
+    }
+}
+
+@media (max-width:986px) {
+    #about-us1 {       
+        height: auto;
+    }
+
+    #about-us2 {      
+        height: auto;
+    }
+
+
+    .card-img-top {
+        width: 6em;
+    }
+}
+
+/* Slideshow container with a dark overlay */
+.slideshow-container {
+    position: relative;
+    background-image: url('https://res.cloudinary.com/luxuryp/images/w_1280,c_limit,f_auto,q_auto/fuammgjubhjfvgcqleef/edit-image-056');
+    background-size: cover;       /* Ensures the background covers the entire container */
+    background-position: top;     /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background repetition */
+    height: 500px;                /* Set a fixed height for the slideshow */
+    color: white;                 /* Set text color to ensure visibility */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    z-index: 1;                   /* Ensure the container is above the overlay */
+    position: relative;           /* Required for ::before positioning */
+}
+
+/* Dark overlay */
+.slideshow-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the opacity for the desired darkness */
+    z-index: -1;   /* Ensure the overlay is behind the content */
+}
+
+/* Style for each slide */
+.mySlides {
+    display: none; /* Hide slides initially */
+}
+
+.mySlides p {
+    font-size: 25px;
+    color: #EFEFE9; /* Ensure the quote text is visible against the background */
+    text-shadow: 2px 2px 4px #223030;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.benefits{
+    text-align: start;
+    font-size: 20px;
+    color: #EFEFE9; /* Ensure the quote text is visible against the background */
+    text-shadow: 2px 2px 4px #223030;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+/* Previous and next buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #EFEFE9;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    text-decoration: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #959D90;
+}
+
+/* Dot container and dots */
+.dot-container {
+    text-align: center;
+    padding: 10px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #523D35;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.logo-img {
+    display: block;
+    margin: 0 auto; /* Center the logo horizontally */
+    max-width: 100%; /* Ensure the image scales down to fit the container */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+/* Media queries for tablets (768px and below) */
+@media (max-width: 768px) {
+    .logo-img {
+        max-width: 80%; /* Adjust size on tablets */
+    }
+}
+
+/* Media queries for mobile devices (576px and below) */
+@media (max-width: 576px) {
+    .logo-img {
+        max-width: 70%; /* Adjust size further on mobile devices */
+    }
+}
+
+#luxury2 {
+    transition: transform 0.3s; /* Smooth transition for hover effects */
+    box-shadow: 
+        -4px 4px 0px rgba(82, 61, 53, 0.4), /* #523D35 */
+        -6px 6px 0px rgba(149, 157, 144, 0.4), /* #959D90 */
+        -8px 8px 0px rgba(187, 165, 143, 0.4), /* #BBA58F */
+        -10px 10px 0px rgba(232, 217, 205, 0.4), /* #E8D9CD */
+        -12px 12px 0px rgba(239, 239, 233, 0.4); /* #EFEFE9 */
+    padding: 2em;
+    border: solid #EFEFE9;
+    border-radius: 50px 0px 0px 0px; /* top, right, bottom, left */
+    background-color: #EFEFE9;
+}
+
+#mobile-image {
+    width: 80%; /* Make it responsive */
+}
+
+#contact-button{
+    background-color: #523D35;
+    font-size: 25px;
+    border: none;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-top: 3em;
+}
+
+#flexCheckDefault{
+    font-size: 20px;
+    border: solid #959D90;
+}
+
+#btn-send{
+    background-color: #223030;
+    font-size: 20px;
+    border: none;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin: 0 auto;
+}
+
+#newsletter {
+    margin-left: 5em;
+}
+
+/* Ensure the social media icons are centered */
+.social-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icon img {
+    width: 30px;
+    height: 30px;
+  }
