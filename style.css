@@ -68,24 +68,25 @@ html, body {
 
 #header-button {
     position: absolute;
-    top: 60%; /* Adjust based on desired position */
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1; /* Keeps the button on top */
     background-color: #523d35bc;
     color: #EFEFE9;
     font-size: 20px;
+    background-color: #523d35bc;
 }
 
 .centered-text {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #E6E6E6;
     font-size: 5em;
     text-shadow: 2px 2px 4px #223030;
 }
+
 
 @media (max-width: 768px) {
     .centered-text {
